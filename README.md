@@ -1,8 +1,9 @@
 > **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
 > Do not edit files here directly — changes will be overwritten on the next sync.
-> Last sync: [`183a96a`](https://github.com/elabit/robotmk-starter/commit/183a96acf2f03a8f45a214b03a91919129780c2e)
+> Last sync: [`ff564c2`](https://github.com/elabit/robotmk-starter/commit/ff564c297103087fd16e6114bf8118021b252eaa)
 
----# cryptolibrary-simple
+---
+# cryptolibrary-simple
 
 Minimal example for using [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto) with Robotmk.
 Demonstrates how to store an encrypted secret in a Robot Framework suite and decrypt it at runtime using a private key file — no plaintext passwords anywhere in the codebase.
