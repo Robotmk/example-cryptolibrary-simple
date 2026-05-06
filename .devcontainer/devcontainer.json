@@ -5,11 +5,12 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "d-biehl.robotcode",
-        "GitHub.copilot",
-        "GitHub.copilot-chat"
-      ]
+        "d-biehl.robotcode"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.rcc-env/bin/python"
+      }
     }
   },
-  "postCreateCommand": "curl -fsSL -o /usr/local/bin/rcc https://github.com/elabit/robotmk/releases/download/v4.0.0/rcc_linux64 && chmod +x /usr/local/bin/rcc && rcc holotree vars --robot robot.yaml"
+  "postCreateCommand": "mkdir -p .bin && curl -fsSL -o .bin/rcc https://github.com/elabit/robotmk/releases/download/v4.0.0/rcc_linux64 && chmod +x .bin/rcc && SPACE_ROOT=$(.bin/rcc holotree vars --robot robot.yaml 2>&1 | grep '^export RCC_HOLOTREE_SPACE_ROOT=' | cut -d= -f2) && ln -sfn \"${SPACE_ROOT}\" .rcc-env && echo \"export PATH=${SPACE_ROOT}/bin:\\$PATH\" >> ~/.bashrc"
 }
