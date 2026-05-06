@@ -1,6 +1,12 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1231190529)\n\n> **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
+> **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
 > Do not edit files here directly — changes will be overwritten on the next sync.
-> Last sync: [`4ea00a1`](https://github.com/elabit/robotmk-starter/commit/4ea00a140ad9996d8a01278cb8001dcdaab6837f)
+> Last sync: [`ac1cd72`](https://github.com/elabit/robotmk-starter/commit/ac1cd72068b909420fb3917ec826378b5761d699)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://www.robotmk.org/rmk_crop_transp_w150.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://www.robotmk.org/rmk_crop_transp_150.png">
+</picture>
+
 
 ---
 # cryptolibrary-simple
@@ -34,8 +40,7 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 
 - [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto)
 - [Robot Framework](https://robotframework.org)
-- [Robotmk documentation](https://robotmk.org)
-- [RCC (Robocorp Command Center)](https://robocorp.com/tools/rcc)
+- [Robotmk Homepage](https://robotmk.org)
 
 
 ## Prerequisites
@@ -54,10 +59,28 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 
 ## How to Run
 
-Run with RCC (creates the isolated environment on first run):
+### On the console
+
+Run directly with RCC (creates the isolated environment on first run):
 
 ```bash
-rcc run
+rcc task script --robot robot.yaml -- robot suite.robot
 ```
 
-> **In the devcontainer:** RCC is pre-installed. Open the integrated terminal and run `rcc run` directly.
+### In VS Code / Locally
+
+Create and activate the environment, then open VS Code from the activated environment: 
+
+```bash
+rcc task shell
+code . 
+```
+
+Install the [RobtoCode](https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode) extension for VS Code to run the robot with the integrated run/debug tools.  
+**This is the recommended way for the implementation of Robot Framework suites.**
+
+### In VS Code / Devcontainer
+
+Just press the button below. RCC is pre-installed, will create the environment and activate it for VS Code. 
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1231190529)
