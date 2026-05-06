@@ -1,12 +1,8 @@
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1231190529)
+
 > **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
 > Do not edit files here directly — changes will be overwritten on the next sync.
-> Last sync: [`ac1cd72`](https://github.com/elabit/robotmk-starter/commit/ac1cd72068b909420fb3917ec826378b5761d699)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://www.robotmk.org/rmk_crop_transp_w150.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://www.robotmk.org/rmk_crop_transp_150.png">
-</picture>
-
+> Last sync: [`0496f33`](https://github.com/elabit/robotmk-starter/commit/0496f33b425765ebebb0b5fb4e4ae6bb5683459e)
 
 ---
 # cryptolibrary-simple
@@ -55,7 +51,7 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 | Robot Framework | `7.4` |
 | robotframework-crypto | `0.3` |
 
-> All versions are pinned in `_dev/config/versions.env` and injected into `conda.yaml` at generation time.
+
 
 ## How to Run
 
