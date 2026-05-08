@@ -1,16 +1,35 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1231190529)
+<!-- First include the example/template's partial. Examples include the exmaple-intro.partial in turn. -->
 
-> **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
-> Do not edit files here directly — changes will be overwritten on the next sync.
-> Last sync: [`cc671f8`](https://github.com/elabit/robotmk-starter/commit/cc671f82eff0bb3e7e11fdca224e501b0115eccb)
-
----
 # cryptolibrary-simple
 
-Minimal example for using [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto) with Robotmk.
-Demonstrates how to store an encrypted secret in a Robot Framework suite and decrypt it at runtime using a private key file — no plaintext passwords anywhere in the codebase.
+<!-- Common intro injected after H1 in every example README.
+     Edit this file in _dev/_shared/ — do not edit the generated copy. -->
 
-## What This Demonstrates
+This repository provides a **working example** to learn and test [Robot Framework](https://robotframework.org/) automation - the test scripting language used by [Robotmk](https://www.robotmk.org) for *Synthetic Monitoring* in [Checkmk](https://checkmk.com).
+
+## How to Run the example
+
+### Run online in a VS Code Devcontainer (recommended)
+
+This is the easiest way to run the example — no local installation needed. Just click the button below:
+
+[![Run this Robot in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/robotmk/example-cryptolibrary-simple)
+
+> **What is a GitHub Codespace?**  
+> A Codespace is a browser-based development environment (VS Code) hosted by GitHub — no local installation needed.  
+
+### Manually with RCC
+
+To run the example manually, refer to the blog post with the step-by-step instructions:   
+→ [How to Run Robot Framework Examples with RCC](https://www.robotmk.org/en/blog/rcc-efficient-python-integration/)  
+→ [Troubleshooting RCC](https://www.robotmk.org/en/blog/rcctrouble/)
+
+
+Minimal example for using [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto) with Robotmk.  
+Demonstrates how to store an encrypted secret in a Robot Framework suite and decrypt it at runtime using a private key file — no plaintext passwords anywhere in the codebase!
+
+## About this Robot Framework test
 
 - Encrypting a password with `CryptoLibrary` and storing the `crypt:…` value in the suite
 - Passing the key password via an environment variable (`RMKCRYPTPW`)
@@ -22,27 +41,16 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 |---|---|
 | `Test Password Equality` | Decrypts an encrypted password string and asserts it equals the known plaintext |
 
-## Key Files
-
-| File | Purpose |
-|---|---|
-| `suite.robot` | Single test suite with the `Test Password Equality` test case |
-| `conda.yaml` | Python environment (Python `3.12`, robotframework-crypto `0.3`) |
-| `robot.toml` | Sets the `RMKCRYPTPW` environment variable consumed by CryptoLibrary |
-| `keys/private_key.json` | Demo private key for decryption — replace with your own in production |
-| `.devcontainer/devcontainer.json` | VS Code devcontainer with RCC pre-installed |
 
 ## Links
 
+- [Robotmk Blog: How to use the CryptoLibrary](https://www.robotmk.org/en/blog/cryptolibrary/)
 - [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto)
 - [Robot Framework](https://robotframework.org)
 - [Robotmk Homepage](https://robotmk.org)
 
 
-## Prerequisites
 
-**RCC**  to create isolated self contained environments. Download from the [Robotmk release page](https://github.com/elabit/robotmk/releases/download/v4.0.0/) or use the provided script (`_dev/scripts/download-rcc.sh` / `download-rcc.ps1`).
-  
 ## Libraries & Versions
 
 | Library | Version |
@@ -52,52 +60,21 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 | robotframework-crypto | `0.3` |
 
 
-
-## How to Run
-
-### On the console
-
-Run directly with RCC (creates the isolated environment on first run):
-
-```bash
-rcc task script --robot robot.yaml -- robot suite.robot
-```
-
-### In VS Code / Locally
-
-Create and activate the environment, then open VS Code from the activated environment: 
-
-```bash
-rcc task shell
-code . 
-```
-
-Install the [RobotCode](https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode) extension for VS Code to run the robot with the integrated run/debug tools.  
-**This is the recommended way for the implementation of Robot Framework suites.**
-
-### In VS Code / Devcontainer
-
-Just press the button below. RCC is pre-installed, will create the environment and activate it for VS Code. 
-
-## Closing Notes
+## About
 
 Also try the other RF example suites, they all work in the Codespace environment.  
 
-This is only the beginning of the journey, there is a lot more to explore in the world of Robot Framework, Robotmk and Checkmk.  
+Found a bug or have a suggestion?  
+→ [Open an issue](https://github.com/robotmk/robotmk-starter/issues) or submit a [pull request](https://github.com/robotmk/robotmk-starter/pulls) — contributions are welcome.
 
-If you want to learn more, there are several ways of how we can support you:
+Want to go deeper? Want ot get a certified professional?  
+→ I offer [Synthetic Monitoring Trainings](https://lp.robotmk.org/robotmk-masterclass-4d-en) or book a free [call](https://meet.brevo.com/simon-meggle).
 
-- [Synthetic Monitoring Trainings](https://lp.robotmk.org/robotmk-masterclass-4d-en)
-- Implementing a **Robotmk POC** in your company
-- Know How Transfer
-- Code Review of existing Tests & Coaching Sessions
-- "Extended Workbench" - We work together on your test automation projects for a defined period of time
+**Simon Meggle** — Founder of Robotmk, Product Manager Synthetic Monitoring at Checkmk
+> ---
+>
+> **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
+> Do not edit files here directly — changes will be overwritten on the next sync.
+> Last sync: [`b96f5d3`](https://github.com/elabit/robotmk-starter/commit/b96f5d3e297f6ae35943ba7942b7e9b8dac4cd0e)
 
-Reach out to us via mail at robotmk.org or book a free [clarification call](https://meet.brevo.com/simon-meggle).
-
-**Simon Meggle**  
-*CEO Elabit GmbH*  
-*Founder of Robotmk*  
-*Product Manager of Synthetic Monitoring at Checkmk*
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1231190529)
+---
