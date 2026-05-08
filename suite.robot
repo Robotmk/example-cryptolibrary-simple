@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       A minimalistic example of how to use the CryptoLibrary, without bells and whistles.
+Documentation       A minimalistic example of how to use the **CryptoLibrary**, without bells and whistles.
 
 Library     CryptoLibrary
 ...             key_path=${CURDIR}/keys

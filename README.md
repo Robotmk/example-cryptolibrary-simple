@@ -1,4 +1,4 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1231190529)
+
 <!-- First include the example/template's partial. Examples include the exmaple-intro.partial in turn. -->
 
 # cryptolibrary-simple
@@ -16,6 +16,8 @@ This is the easiest way to run the example — no local installation needed. Jus
 
 [![Run this Robot in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/robotmk/example-cryptolibrary-simple)
 
+→ [How to run the example in Codespace](https://github.com/elabit/robotmk-starter/blob/main/docs/example-guide.md)
+
 > **What is a GitHub Codespace?**  
 > A Codespace is a browser-based development environment (VS Code) hosted by GitHub — no local installation needed.  
 
@@ -26,10 +28,11 @@ To run the example manually, refer to the blog post with the step-by-step instru
 → [Troubleshooting RCC](https://www.robotmk.org/en/blog/rcctrouble/)
 
 
+## About this Robot Framework test
+
 Minimal example for using [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto) with Robotmk.  
 Demonstrates how to store an encrypted secret in a Robot Framework suite and decrypt it at runtime using a private key file — no plaintext passwords anywhere in the codebase!
 
-## About this Robot Framework test
 
 - Encrypting a password with `CryptoLibrary` and storing the `crypt:…` value in the suite
 - Passing the key password via an environment variable (`RMKCRYPTPW`)
@@ -44,14 +47,19 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 
 ## Links
 
+### Recommended links for this example
+
 - [Robotmk Blog: How to use the CryptoLibrary](https://www.robotmk.org/en/blog/cryptolibrary/)
+
+### General links & Documentation
+
 - [robotframework-crypto](https://github.com/Snooz82/robotframework-crypto)
 - [Robot Framework](https://robotframework.org)
 - [Robotmk Homepage](https://robotmk.org)
 
 
 
-## Libraries & Versions
+## Libraries and Versions used in this example
 
 | Library | Version |
 |---|---|
@@ -62,12 +70,12 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 
 ## About
 
-Also try the other RF example suites, they all work in the Codespace environment.  
+Also try the other [RF example suites](https://github.com/elabit/robotmk-starter#content), they all work in the Codespace environment.  
 
-Found a bug or have a suggestion?  
+🪲 Found a bug or have a suggestion?  
 → [Open an issue](https://github.com/robotmk/robotmk-starter/issues) or submit a [pull request](https://github.com/robotmk/robotmk-starter/pulls) — contributions are welcome.
 
-Want to go deeper? Want ot get a certified professional?  
+📖 Want to go deeper? Want ot get a certified professional?  
 → I offer [Synthetic Monitoring Trainings](https://lp.robotmk.org/robotmk-masterclass-4d-en) or book a free [call](https://meet.brevo.com/simon-meggle).
 
 **Simon Meggle** — Founder of Robotmk, Product Manager Synthetic Monitoring at Checkmk
@@ -75,6 +83,6 @@ Want to go deeper? Want ot get a certified professional?
 >
 > **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
 > Do not edit files here directly — changes will be overwritten on the next sync.
-> Last sync: [`b96f5d3`](https://github.com/elabit/robotmk-starter/commit/b96f5d3e297f6ae35943ba7942b7e9b8dac4cd0e)
+> Last sync: [`400b12d`](https://github.com/elabit/robotmk-starter/commit/400b12de5a6b16dee974dfe397ff59ce01a99e71)
 
 ---
