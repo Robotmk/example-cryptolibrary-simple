@@ -65,7 +65,7 @@ Demonstrates how to store an encrypted secret in a Robot Framework suite and dec
 | Library | Version |
 |---|---|
 | Python | `3.12` |
-| Robot Framework | `7.4` |
+| Robot Framework | `7.5.1` |
 | robotframework-crypto | `0.3` |
 
 
@@ -84,6 +84,6 @@ Also try the other [RF example suites](https://github.com/elabit/robotmk-starter
 >
 > **This repository is automatically synced from [elabit/robotmk-starter](https://github.com/elabit/robotmk-starter/tree/main/examples/cryptolibrary-simple).**
 > Do not edit files here directly — changes will be overwritten on the next sync.
-> Last sync: [`ca44ab8`](https://github.com/elabit/robotmk-starter/commit/ca44ab8f09ad6e757627c8f0b0efadac6e4729da)
+> Last sync: [`1409e78`](https://github.com/elabit/robotmk-starter/commit/1409e7803bd4142ee2bbdd74cc4636503c680f89)
 
 ---
